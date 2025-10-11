@@ -67,7 +67,7 @@
     
     <iframe src="" frameborder="0" id="iframe"></iframe>
 
-    <script defer>
+    <script>
         // register sw
         if ("serviceWorker" in navigator) {
             window.addEventListener("load", () => {
@@ -76,7 +76,7 @@
         }
     </script>
 
-    <script defer>
+    <script>
         // actual uv handling
 
         const connection = new BareMux.BareMuxConnection("/baremux/worker.js")
