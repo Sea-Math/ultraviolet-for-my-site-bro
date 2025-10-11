@@ -110,8 +110,10 @@
             }
             document.getElementById("iframe").src = __uv$config.prefix + __uv$config.encodeUrl(url)
             console.log("o")
-            iframe.onload = console.log("i")
+            iframe.onload = document.getElementById("urlbar").value = document.getElementById("iframe").src
         }
+
+        
     </script>
 
 </body>
